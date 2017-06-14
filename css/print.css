@@ -1,0 +1,31 @@
+body { line-height:24px; }
+* {
+        background: white !important;
+        color: black !important;
+		list-style:none;
+}
+.hr { border-bottom:solid 1px #000; margin-top:15px; }
+#background-switcher, .controls, ul#social, #get_in_touch, .controls { display:none; } 
+#top-content h3 { float:none; }
+#top-content .photo-holder { float:left; margin:0 35px 12px 0; overflow:visible;  padding:10px 10px 4px 10px; border:solid 1px #d5d5d5; margin-bottom:18px; }
+h1, h2, h3, h4, h5, h6 { margin:10px 10px 15px 0px;  }
+h6 { line-height:2px; margin-top:-15px; font-style:italic; clear:both; font-size:13px; font-family:"Myriad pro"; }
+h3 { font-style:italic; font-family:"Myriad pro"; float:left; }
+h1 { font-size:52px; padding-top:10px; font-family:"Myriad pro"; }
+h5 { float:left; margin-left:5px; margin-top:10px; clear:right; font-family:"Myriad pro"; font-size:18px; font-style:italic;  }
+h5:before { content: " - "; margin-right:5px; }
+h4 { font-weight:normal; }
+h2{  font-family:"Myriad pro"; padding-top:20px; padding-bottom:20px; }
+h2:after { content: " : ";}
+.description { clear:both; margin-bottom:10px;  margin-top:0; padding-top:0; }
+.top-description {font-family: Arial, Helvetica, sans-serif; font-size:14px; font-weight:normal; margin-top:15px; margin-bottom:10px; }
+ul.list { margin-top:-45px; }
+ul.list>li{ border-bottom:1px solid #000; margin-bottom:10px; padding-bottom:10px; left:0;  }
+ul.list>li.arrow-up { margin:0; padding:0; border:0;  }
+ul.list ul { margin-top:0; margin:0 0 10px 20px; }
+ul.list ul li{ list-style-type:circle; }
+ul.list ol li{ list-style-type: decimal; }
+.address, .phone, .mail { margin:0;  padding-bottom:0;}
+.address:before  { content:"Address: "; font-weight:bold; }
+.phone:before  { content:"Phone: ";  font-weight:bold; }
+.mail:before  { content:"e-mail: ";  font-weight:bold; }

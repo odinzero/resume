@@ -1,0 +1,10 @@
+#banner {
+    margin-top: 5px;
+    border-radius: 3px 3px 3px 3px;
+    background: lightblue;
+    color:white;
+    width:605px;
+    height: 25px;
+    font-size: 18px;
+} 
+

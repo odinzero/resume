@@ -1,0 +1,191 @@
+/*
+Fancy Resume / CV 
+Created: 02/02/2010
+By: Catalin Pinte
+Contact Info: pinte_catalin@yahoo.com
+*/
+
+/* RESET CSS */
+* {	margin:0; padding:0; outline:0; border:0; }
+
+/* BASIC */
+/*  
+     background 1  :   #a3a8ad url(../img/background-1.png) 0 0 repeat-x; 
+     background 2  :   #a3a8ad url(../img/background-2.png) 0 0 repeat-x; 
+     background 3  :   #333 url(../img/background-3.png) 0 0 repeat-x;  
+     background 4  :   #2f597f url(../img/background-4.png) 0 0 repeat-x;
+     background 5  :   #173d5f url(../img/background-5.png) 0 0 repeat-x;
+*/
+
+body { 
+    background: #a3a8ad url(../img/background-1.png) 0 0 repeat-x; 
+	background-attachment:fixed;  
+	font:14px/24px Arial,Helvetica,sans-serif; 
+	color:#333; 
+}
+
+#main { width:1020px; margin:auto;	position:relative;	top:20px;  }
+
+
+
+
+/*set content*/
+h1,h2,h3,h4,h5,h6,p { overflow:hidden; text-overflow: ellipsis;  }
+h1:before,h2:before,h3:before,h4:before,h5:before,h6:before,
+p:before
+/*li:before*/
+{ content: "encoded";  
+           color: white; /* Цвет текста */ 
+           background-color: lightgrey; /* #fc0 Цвет фона */ 
+           font-size: 90%; /* Размер шрифта */ 
+           padding: 2px; /* Поля вокруг текста */
+           border-radius: 3px 3px 3px 3px ;
+}
+/* except  this elements (before decoding) */
+#contact-div h2:before,p.contact_success:before,
+p.contact_error:before,p.psend:before,
+li.save:before, li.print:before,li.view-photo:before,
+li.mail-top:before,
+li.arrow-up:before,li.liwrap:before, #version:before
+{content:none;}
+
+/*remove content after decoding*/
+h1.no-before:before,h2.no-before:before,h3.no-before:before,h4.no-before:before,
+h5.no-before:before,h6.no-before:before,p.no-before:before,
+li.no-before:before
+{content:none;}
+
+h1, h2, h3, h4, h5, h6 { margin:0 10px 10px 0; color:#333; }
+h1 { font-size:36px; padding-top:5px; width: 450px; }
+h2 { font-size:25px;color:#333; width: 450px; }
+h3 { font-size:20px; width: 450px; font-style:italic;  margin-top:0; color:#173D5F; }
+h4 { font-size:16px; width: 450px; font-weight:normal; }
+h5 { font-size:14px; width: 650px; margin-left:10px; display:inline; background:#2F597F; color:#fff;  width:150px; text-align:center; padding: 3px 10px 3px 10px; font-weight:normal; line-height:26px; clear:right;     }
+h5:hover{ background:#173D5E;  } 
+h6 { width: 650px; line-height:1em; clear:both; font-size:13px; font-weight:bold; font-weight:bold; text-align:left; margin:0; padding:0; }
+
+.cufon-active h1 { padding:0; margin:0; margin-left:219px; font-size:60px; margin-top:-4px;}
+.cufon-active h2 { padding-top:0; font-size:35px;}
+.cufon-active h3 { padding-top:0; font-size:27px;}
+.cufon-active h4 { padding-top:0; font-size:20px;}
+a { color:#333; text-decoration:none; }
+.hr {margin-top:0; padding-top:0; background: url(../img/separator.png) 0 0 repeat-x; height:2px; margin-bottom:32px;}
+
+/* CONTENT */
+
+#top-content { background:url(../img/top-content.png) 0 0 no-repeat; min-height:270px; width:886px; padding:67px 67px 9px 67px; margin-bottom:0; display:inline-block;}
+#top-content .photo-holder {  padding:10px 10px 4px 10px; background:#f6f6f6; border:solid 1px #d5d5d5; margin-bottom:18px; }
+/* IE7 Fix */ *:first-child+html #top-content .photo-holder { padding-bottom:10px; }  
+#top-content .photo-shaddow { background:url(../img/shaddow.png) no-repeat scroll -2px 100% transparent; width:auto; height:auto; float:left; margin:0 35px 12px 0; overflow:visible;   }
+
+#top-content .top-description { font-family: Arial, Helvetica, sans-serif; width: 600px; font-size:19px; font-weight:normal; margin-top:10px; margin-bottom:15px; }
+
+#top-content .address { background: url(../img/icons-sprite.png) 0 -473px no-repeat; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0; }
+#top-content .phone { background: url(../img/icons-sprite.png) 0 -62px no-repeat; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0; }
+#top-content .mail { background: url(../img/icons-sprite.png) 0 -562px no-repeat; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0; }
+#top-content .skype { background: url(../img/skype.png) 0 6px no-repeat; background-size: 20px 20px; display:block; overflow: hidden; padding:4px 0 0 35px; margin:0;  }
+
+#top-content .controls { position:absolute; top:60px; right:69px; }
+#top-content .controls { list-style:none; margin-top:0; padding-top:0; height:35px;  }
+#top-content .controls a { padding:13px; }
+#tooltip{width:130px; height:45px; position:absolute; background:url(../img/tooltip.png) 0 0 no-repeat; display:table-cell;text-align:center; padding-top:15px; display:none;  font-weight:bold; font-size:12px;  z-index:2; }
+/* IE7 Fix */ *:first-child+html   #tooltip{ margin-top:15px; }
+
+#top-content .save, #top-content .print, #top-content .mail-top, #top-content .view-photo { background: url(../img/icons-sprite.png) 0 0  no-repeat; height:35px; margin-left:10px;  display:inline; line-height:35px; padding:9px 1px 9px 1px; }
+#top-content .save { background-position: -1px -240px; width:29px;  }
+/* IE7 Fix */ *:first-child+html  #top-content .save { background-position: 0 -225px;  }
+#top-content .print { background-position: 0 -312px; width:32px;  }
+/* IE7 Fix */ *:first-child+html  #top-content .print { background-position: 0 -298px;  }
+#top-content .mail-top { background-position: -1px -160px; width:35px;}
+/* IE7 Fix */ *:first-child+html  #top-content .mail-top { background-position: 0 -145px; }
+#top-content .view-photo { background-position: -1px -393px; width:29px; }
+/* IE7 Fix */ *:first-child+html  #top-content .view-photo { background-position: 0 -378px; }
+
+
+#middle-content { background:url(../img/middle-content.png) 0 0 repeat-y; height:auto; width:885px; padding:0 67px 25px 68px; margin-top:0}
+#middle-content h3 { margin-top:0; float:left; margin-bottom:0; padding-bottom:0px; }
+#middle-content .description{ clear:both; padding-top:10px; padding-bottom:0; margin-bottom:0; } 
+
+
+#middle-content ul.list { clear:both; margin:30px 0 45px 45px; list-style:none;  position:relative; border-bottom:1px dashed #afafaf;  }
+#middle-content ul.list>li { padding:25px 25px 20px 25px; display:block; border:1px dashed #afafaf; border-bottom:0;   }
+#middle-content ul.list li.arrow-up {top:-17px; background:transparent url(../img/arrow-up.png) 0 2px no-repeat; left:30px; width:100px; height:18px; padding:0; border:0; overflow:visible; position:absolute; }
+
+
+#middle-content ul.list ul, #middle-content ul.list  ol { margin-top:15px; }
+#middle-content ul.list ul li { margin-left:17px; }
+#middle-content ul.list ol li { margin-left:20px; }
+
+#bottom-content { background:url(../img/bottom-content.png) 0 0 no-repeat; height:45px; width:1020px;   }
+
+/* Contact Form */
+.contact_success { margin:15px 0 0 0; padding:15px; width:445px; background:#69EF68; border:solid 1px green; font-size:1em; overflow:hidden; display:none; }
+.contact_error { margin:15px 0 0 0; padding:15px; width:445px; background:#FF9F9F; border:solid 1px red; font-size:1em; overflow:hidden; display:none;  }
+
+#contact { margin:15px 0 50px 0; width:100%; width:300px;height: 260px;}
+#contact div{ width:285px; height:75px;  float:left; margin:10px 15px 5px 0; }
+
+#contact p{ width:350px; clear:both; padding:10px 0 15px 0; }
+#contact input.i-text{ width:265px; }
+#contact input.i-text,
+#contact textarea        { border:1px solid #CDCDCD; padding:5px; margin:8px 0 0 0; }
+#contact input.i-text:focus,
+#contact textarea:focus  { background:#ffc; }
+#contact input.i-text.error,
+#contact textarea.error { background:#FF9F9F; border:solid 1px red; }
+#contact textarea        { font:.9em Verdana, Arial, Helvetica, sans-serif; width:575px; }
+#contact label           { font-weight:700; font-size:13px; width:90px;  font-family:Arial, Helvetica, sans-serif;}
+#contact label:after     {content:": ";}
+#contact input.i-submit {  border:solid 1px #CDCDCD; background:#f0eaea; color:#333; padding:5px 10px 5px 10px; margin-top:10px;  }
+
+font.error { clear:both; line-height:25px;  background: url(../img/icons-min.png) 0 2px no-repeat; padding-left: 20px; color:#222; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  font-size:13px;  }
+font.success {clear:both; line-height:25px; background: url(../img/icons-min.png) 0 -44px no-repeat; padding-left: 20px; color:#222; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:13px;   }
+#loading {  margin-left:15px; padding-left:22px; background:url(../img/ajax-loader.gif) 0 50% no-repeat;  display:none;  }
+
+
+/* Get in touch icons */
+#social { margin:0; padding:0; list-style:none; display:inline-block; margin-bottom:-2px; }
+#social li { margin:0 0 0 20px; padding:0;  float:left; width:35px; height:35px; display:inline-block; }
+#middle-content ul.list ul#social li { margin-left:0; margin-right:15px;  }
+#middle-content ul.list ul#social { margin-top:0px; margin-bottom:-3px; }
+#social a { display:block; padding:17px; margin:0; }
+/* IE 6 Fix */  * html #social li{ margin:0 0 0 4px; width:35px; }
+/* IE 7 Fix */  *:first-child+html #social li{ margin:0 0 0 1px; width:35px; }
+#social #twitter{ background: url("../img/social-icons.png") 0 0 no-repeat; }
+#social #blog{ background: url("../img/social-icons.png") -70px 0 no-repeat; }
+#social #delicios{ background: url("../img/social-icons.png") -142px 0 no-repeat; }
+#social #digg{ background: url("../img/social-icons.png") -215px 0 no-repeat;}
+#social #facebook{ background: url("../img/social-icons.png") -286px 0 no-repeat; }
+#social #flikr{ background: url("../img/social-icons.png") -358px 0 no-repeat; }
+#social #myspace{ background: url("../img/social-icons.png") -431px 0 no-repeat; }
+#social #RSS{ background: url("../img/social-icons.png") -494px 0 no-repeat;}
+
+.butts_dis {
+  position:absolute;
+  z-index:1;
+  top:0px; left:10px;
+}
+
+.butts_dis_1 {
+  position:absolute;
+  z-index:1;
+  top:0px; left:55px;
+}
+
+.butts_dis_2 {
+  position:absolute;
+  z-index:1;
+  top:0px; left:102px;
+}
+
+.block_img {
+  position:relative;
+  z-index:1;
+  top:0px; left:-105px; 
+  margin-right: -80px;
+}
+
+#lang_version {
+   border: 1px solid #CDCDCD; 
+   font-size: 16px;
+}
