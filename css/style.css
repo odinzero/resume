@@ -30,7 +30,16 @@ body {
 
 
 /*set content*/
-h1,h2,h3,h4,h5,h6,p { overflow:hidden; text-overflow: ellipsis;  }
+h1,h2,h3,h4,h5,h6,p { 
+    overflow:hidden;
+    text-overflow: ellipsis;
+     text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+}
+
 h1:before,h2:before,h3:before,h4:before,h5:before,h6:before,
 p:before
 /*li:before*/
