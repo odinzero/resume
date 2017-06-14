@@ -1,174 +1,391 @@
-var _0x1fc0 = ["\x65\x61\x73\x65\x49\x6E\x42\x61\x63\x6B", "\x65\x61\x73\x65\x4F\x75\x74\x42\x61\x63\x6B", "\x23\x31\x31\x31", "\x6E\x6F", "\x66\x61\x6E\x63\x79\x62\x6F\x78", "\x23\x62\x61\x6E\x6E\x65\x72", "\x23\x63\x6F\x6E\x74\x61\x63\x74\x2D\x6D\x65", "\x2E\x66\x61\x6E\x63\x79\x2D\x62\x6F\x78", "\x6E\x6F\x6E\x65", "\x6F\x76\x65\x72", "\x3C\x73\x70\x61\x6E\x20\x69\x64\x3D\x22\x66\x61\x6E\x63\x79\x62\x6F\x78\x2D\x74\x69\x74\x6C\x65\x2D\x6F\x76\x65\x72\x22\x3E\x49\x6D\x61\x67\x65\x20", "\x20\x2F\x20", "\x6C\x65\x6E\x67\x74\x68", "\x20\x26\x6E\x62\x73\x70\x3B\x20", "", "\x3C\x2F\x73\x70\x61\x6E\x3E", "\x61\x5B\x72\x65\x6C\x3D\x67\x72\x6F\x75\x70\x31", "\x61\x5B\x72\x65\x6C\x3D\x67\x72\x6F\x75\x70\x32\x5D", "\x61\x5B\x72\x65\x6C\x3D\x67\x72\x6F\x75\x70\x33\x5D", "\x61\x5B\x72\x65\x6C\x3D\x67\x72\x6F\x75\x70\x34\x5D", "\x23\x74\x6F\x6F\x6C\x74\x69\x70", "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64", "\x63\x73\x73", "\x70\x61\x72\x65\x6E\x74", "\x66\x69\x78\x65\x64", "\x30\x20\x30", "\x62\x6F\x64\x79", "\x63\x6C\x69\x63\x6B", "\x23\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x73\x77\x69\x74\x63\x68\x65\x72\x20\x61", "\x63\x6C\x61\x73\x73", "\x61\x74\x74\x72", "\x61\x63\x74\x69\x76\x65", "\x6C\x65\x66\x74", "\x70\x6F\x73\x69\x74\x69\x6F\x6E", "\x70\x78", "\x61\x6E\x69\x6D\x61\x74\x65", "\x63\x6C\x65\x61\x72\x51\x75\x65\x75\x65", "\x74\x69\x74\x6C\x65", "\x74\x65\x78\x74", "\x69\x6E\x61\x63\x74\x69\x76\x65", "\x73\x6C\x6F\x77", "\x66\x61\x64\x65\x49\x6E", "\x74\x6F\x70", "\x68\x74\x6D\x6C", "\x66\x61\x73\x74", "\x30", "\x66\x61\x64\x65\x4F\x75\x74", "\x68\x6F\x76\x65\x72", "\x6E\x6F\x74", "\x2E\x63\x6F\x6E\x74\x72\x6F\x6C\x73\x20\x6C\x69", "\x2E\x63\x6F\x6E\x74\x72\x6F\x6C\x73\x20\x6C\x69\x20\x61", "\x70\x72\x69\x6E\x74", "\x2E\x63\x6F\x6E\x74\x72\x6F\x6C\x73\x20\x6C\x69\x20\x61\x23\x70\x72\x69\x6E\x74", "\x23\x65\x36\x65\x36\x65\x36", "\x2E\x61\x72\x72\x6F\x77\x2D\x75\x70", "\x23\x6D\x69\x64\x64\x6C\x65\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x20\x75\x6C\x2E\x6C\x69\x73\x74\x3E\x6C\x69\x3A\x6E\x74\x68\x2D\x63\x68\x69\x6C\x64\x28\x65\x76\x65\x6E\x29", "\x23\x66\x36\x66\x36\x66\x36", "\x23\x6D\x69\x64\x64\x6C\x65\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x20\x75\x6C\x2E\x6C\x69\x73\x74\x3E\x6C\x69\x3A\x6E\x74\x68\x2D\x63\x68\x69\x6C\x64\x28\x6F\x64\x64\x29", "\x23\x6D\x69\x64\x64\x6C\x65\x2D\x63\x6F\x6E\x74\x65\x6E\x74\x20\x75\x6C\x2E\x6C\x69\x73\x74\x3A\x6C\x61\x73\x74\x2D\x63\x68\x69\x6C\x64", "\x66\x6F\x6E\x74", "\x23\x77\x61\x72\x6E\x69\x6E\x67\x2C\x20\x23\x73\x75\x6D\x6D\x61\x72\x79", "\x61\x70\x70\x65\x6E\x64\x54\x6F", "\x65\x72\x72\x6F\x72", "\x61\x64\x64\x43\x6C\x61\x73\x73", "\x73\x75\x63\x63\x65\x73\x73", "\x54\x68\x69\x73\x20\x66\x69\x65\x6C\x64\x20\x69\x73\x20\x6F\x6B\x20\x21", "\x64\x69\x73\x61\x62\x6C\x65\x64", "\x23\x73\x65\x6E\x64", "\x23\x6C\x6F\x61\x64\x69\x6E\x67", "\x76\x61\x6C\x69\x64\x61\x74\x65", "\x23\x63\x6F\x6E\x74\x61\x63\x74", "\x76\x61\x6C", "\x23\x64\x65\x63\x72\x79\x70\x74\x69\x6F\x6E\x5F\x6B\x65\x79", "\x23\x6C\x61\x6E\x67\x5F\x76\x65\x72\x73\x69\x6F\x6E", "\x50\x4F\x53\x54", "\x73\x65\x6C\x65\x63\x74\x65\x64", "\x72\x65\x6D\x6F\x76\x65\x41\x74\x74\x72", "\x63\x68\x65\x63\x6B\x65\x64", "\x3A\x62\x75\x74\x74\x6F\x6E\x2C\x20\x3A\x73\x75\x62\x6D\x69\x74\x2C\x20\x3A\x72\x65\x73\x65\x74\x2C\x20\x3A\x68\x69\x64\x64\x65\x6E", "\x3A\x69\x6E\x70\x75\x74", "\x72\x65\x6D\x6F\x76\x65\x43\x6C\x61\x73\x73", "\x68\x69\x64\x65", "\x23\x63\x6F\x6E\x74\x61\x63\x74\x20\x66\x6F\x6E\x74", "\x6E\x61\x6D\x65", "\x76\x61\x63", "\x74\x6F\x70\x2D\x64\x65\x73\x63\x72\x69\x70\x74\x69\x6F\x6E", "\x61\x64\x64\x72\x65\x73\x73", "\x70\x68\x6F\x6E\x65", "\x6D\x61\x69\x6C", "\x73\x6B\x79\x70\x65", "\x74\x73\x30", "\x74\x73\x31", "\x74\x73\x32", "\x74\x73\x34", "\x74\x73\x35", "\x74\x73\x36", "\x74\x73\x37", "\x74\x73\x38", "\x74\x73\x39", "\x74\x73\x31\x30", "\x74\x73\x31\x31", "\x74\x73\x31\x32", "\x74\x73\x31\x33", "\x74\x73\x31\x34", "\x74\x73\x31\x35", "\x74\x73\x31\x36", "\x74\x73\x31\x37", "\x74\x73\x31\x38", "\x74\x73\x31\x39", "\x74\x73\x32\x30", "\x70\x72\x6F\x6A\x65\x63\x74\x73", "\x70\x72\x6F\x6A\x65\x63\x74\x31", "\x64\x65\x73\x63\x5F\x31", "\x70\x72\x6F\x6A\x65\x63\x74\x32", "\x64\x65\x73\x63\x5F\x32", "\x64\x65\x73\x63\x5F\x33", "\x70\x72\x6F\x6A\x65\x63\x74\x33", "\x64\x65\x73\x63\x5F\x34", "\x70\x72\x6F\x6A\x65\x63\x74\x34", "\x64\x65\x73\x63\x5F\x35", "\x6C\x61\x6E\x67\x73", "\x74\x73\x32\x31", "\x74\x73\x32\x32", "\x73\x6C\x69\x64\x65\x55\x70", "\x2E\x63\x6F\x6E\x74\x61\x63\x74\x5F\x65\x72\x72\x6F\x72", "\x73\x6C\x69\x64\x65\x44\x6F\x77\x6E", "\x2E\x63\x6F\x6E\x74\x61\x63\x74\x5F\x73\x75\x63\x63\x65\x73\x73", "\x63\x6C\x6F\x73\x65", "\x68\x31", "\x68\x32", "\x68\x33", "\x68\x34", "\x68\x35", "\x68\x36", "\x70", "\x6C\x69", "\x6E\x6F\x2D\x62\x65\x66\x6F\x72\x65", "\x2E", "\x61\x6A\x61\x78", "\x73\x74\x72\x69\x6E\x67", "\x5B\x73\x5D\x2A\x3C\x28\x64\x69\x76\x7C\x75\x6C\x7C\x6C\x69\x7C\x73\x70\x61\x6E\x7C\x70\x7C\x68\x31\x7C\x68\x32\x7C\x68\x33\x7C\x68\x34\x7C\x68\x35\x7C\x68\x36\x29\x5B\x73\x5D\x2A\x20\x63\x6C\x61\x73\x73\x3D\x22\x2E\x2B", "\x2E\x2B\x22\x3E\x5B\x0D\x0A\x7C\x0D\x0A\x73\x5D\x2A\x28\x2E\x2B\x29\x5B\x0D\x0A\x7C\x0D\x0A\x73\x5D\x2A\x3C\x2F\x28\x64\x69\x76\x7C\x75\x6C\x7C\x6C\x69\x7C\x73\x70\x61\x6E\x7C\x70\x7C\x68\x31\x7C\x68\x32\x7C\x68\x33\x7C\x68\x34\x7C\x68\x35\x7C\x68\x36\x29\x3E\x5B\x73\x5D\x2A", "\x69\x6D", "\x6D\x61\x74\x63\x68", "\x64\x65\x63\x72\x79\x70\x74", "\x41\x45\x53", "\x65\x6E\x63", "\x74\x79\x70\x65\x64\x2D\x66\x61\x64\x65\x2D\x6F\x75\x74", "\x74\x79\x70\x65\x64", "\x2E\x62\x75\x74\x74\x73\x5F\x64\x69\x73\x2C\x20\x2E\x62\x75\x74\x74\x73\x5F\x64\x69\x73\x5F\x31\x2C\x20\x2E\x62\x75\x74\x74\x73\x5F\x64\x69\x73\x5F\x32", "\x2E\x62\x6C\x6F\x63\x6B\x5F\x69\x6D\x67", "\x65\x61\x63\x68", "\x23\x6C\x61\x6E\x67\x5F\x76\x65\x72\x73\x69\x6F\x6E\x20\x6F\x70\x74\x69\x6F\x6E\x3A\x73\x65\x6C\x65\x63\x74\x65\x64", "\x64\x69\x73\x70\x6C\x61\x79", "\x23\x64\x65\x63\x72\x79\x70\x74\x69\x6F\x6E\x5F\x62\x6C\x6F\x63\x6B", "\x2E\x70\x73\x65\x6E\x64", "\x72\x75\x73\x73\x69\x61\x6E", "\x62\x6C\x6F\x63\x6B", "\x6A\x73\x2F\x64\x65\x63\x72\x2E\x68\x74\x6D\x6C", "\x65\x6E\x67\x6C\x69\x73\x68", "\x6A\x73\x2F\x64\x65\x63\x72\x5F\x65\x6E\x2E\x68\x74\x6D\x6C", "\x63\x68\x61\x6E\x67\x65", "\x72\x65\x61\x64\x79"];
-$(document)[_0x1fc0[162]](function() {
-    $(_0x1fc0[5])[_0x1fc0[4]]({"\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x70\x61\x64\x64\x69\x6E\x67": 40, "\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x73\x63\x72\x6F\x6C\x6C\x69\x6E\x67": _0x1fc0[3], "\x74\x69\x74\x6C\x65\x53\x68\x6F\x77": false});
-    $(_0x1fc0[6])[_0x1fc0[4]]({"\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x70\x61\x64\x64\x69\x6E\x67": 40, "\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x73\x63\x72\x6F\x6C\x6C\x69\x6E\x67": _0x1fc0[3], "\x74\x69\x74\x6C\x65\x53\x68\x6F\x77": false});
-    $(_0x1fc0[7])[_0x1fc0[4]]({"\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1]});
-    $(_0x1fc0[16])[_0x1fc0[4]]({"\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x49\x6E": _0x1fc0[8], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x4F\x75\x74": _0x1fc0[8], "\x74\x69\x74\x6C\x65\x50\x6F\x73\x69\x74\x69\x6F\x6E": _0x1fc0[9], "\x74\x69\x74\x6C\x65\x46\x6F\x72\x6D\x61\x74": function(_0x8d67x1, _0x8d67x2, _0x8d67x3, _0x8d67x4) {
-            return _0x1fc0[10] + (_0x8d67x3 + 1) + _0x1fc0[11] + _0x8d67x2[_0x1fc0[12]] + (_0x8d67x1[_0x1fc0[12]] ? _0x1fc0[13] + _0x8d67x1 : _0x1fc0[14]) + _0x1fc0[15]
-        }});
-    $(_0x1fc0[17])[_0x1fc0[4]]({"\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x49\x6E": _0x1fc0[8], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x4F\x75\x74": _0x1fc0[8], "\x74\x69\x74\x6C\x65\x50\x6F\x73\x69\x74\x69\x6F\x6E": _0x1fc0[9], "\x74\x69\x74\x6C\x65\x46\x6F\x72\x6D\x61\x74": function(_0x8d67x1, _0x8d67x2, _0x8d67x3, _0x8d67x4) {
-            return _0x1fc0[10] + (_0x8d67x3 + 1) + _0x1fc0[11] + _0x8d67x2[_0x1fc0[12]] + (_0x8d67x1[_0x1fc0[12]] ? _0x1fc0[13] + _0x8d67x1 : _0x1fc0[14]) + _0x1fc0[15]
-        }});
-    $(_0x1fc0[18])[_0x1fc0[4]]({"\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x49\x6E": _0x1fc0[8], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x4F\x75\x74": _0x1fc0[8], "\x74\x69\x74\x6C\x65\x50\x6F\x73\x69\x74\x69\x6F\x6E": _0x1fc0[9], "\x74\x69\x74\x6C\x65\x46\x6F\x72\x6D\x61\x74": function(_0x8d67x1, _0x8d67x2, _0x8d67x3, _0x8d67x4) {
-            return _0x1fc0[10] + (_0x8d67x3 + 1) + _0x1fc0[11] + _0x8d67x2[_0x1fc0[12]] + (_0x8d67x1[_0x1fc0[12]] ? _0x1fc0[13] + _0x8d67x1 : _0x1fc0[14]) + _0x1fc0[15]
-        }});
-    $(_0x1fc0[19])[_0x1fc0[4]]({"\x6F\x76\x65\x72\x6C\x61\x79\x43\x6F\x6C\x6F\x72": _0x1fc0[2], "\x6F\x76\x65\x72\x6C\x61\x79\x4F\x70\x61\x63\x69\x74\x79": 0.7, "\x65\x61\x73\x69\x6E\x67\x49\x6E": _0x1fc0[0], "\x65\x61\x73\x69\x6E\x67\x4F\x75\x74": _0x1fc0[1], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x49\x6E": _0x1fc0[8], "\x74\x72\x61\x6E\x73\x69\x74\x69\x6F\x6E\x4F\x75\x74": _0x1fc0[8], "\x74\x69\x74\x6C\x65\x50\x6F\x73\x69\x74\x69\x6F\x6E": _0x1fc0[9], "\x74\x69\x74\x6C\x65\x46\x6F\x72\x6D\x61\x74": function(_0x8d67x1, _0x8d67x2, _0x8d67x3, _0x8d67x4) {
-            return _0x1fc0[10] + (_0x8d67x3 + 1) + _0x1fc0[11] + _0x8d67x2[_0x1fc0[12]] + (_0x8d67x1[_0x1fc0[12]] ? _0x1fc0[13] + _0x8d67x1 : _0x1fc0[14]) + _0x1fc0[15]
-        }});
-    var _0x8d67x5 = _0x1fc0[14], _0x8d67x6 = $(_0x1fc0[20]);
-    $(_0x1fc0[28])[_0x1fc0[27]](function() {
-        var _0x8d67x7 = $(this)[_0x1fc0[23]]()[_0x1fc0[22]](_0x1fc0[21]);
-        $(_0x1fc0[26])[_0x1fc0[22]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64": _0x8d67x7, "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x61\x74\x74\x61\x63\x68\x6D\x65\x6E\x74": _0x1fc0[24], "\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64\x2D\x70\x6F\x73\x69\x74\x69\x6F\x6E": _0x1fc0[25]})
+/*
+ 
+ */
+$(document).ready(function() {
+
+    $("#banner").fancybox({
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'padding': 40,
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'scrolling': 'no',
+        'titleShow': false    
     });
-    $(_0x1fc0[49])[_0x1fc0[48]](_0x1fc0[20])[_0x1fc0[47]](function() {
-        clearTimeout(_0x8d67x5);
-        if (_0x8d67x6[_0x1fc0[30]](_0x1fc0[29]) === _0x1fc0[31]) {
-            _0x8d67x6[_0x1fc0[36]]()[_0x1fc0[35]]({"\x6C\x65\x66\x74": ($(this)[_0x1fc0[33]]()[_0x1fc0[32]] - 38) + _0x1fc0[34]}, 300);
-            _0x8d67x6[_0x1fc0[38]]($(this)[_0x1fc0[30]](_0x1fc0[37]))
+
+     // #contact-me
+    $("#contact-me").fancybox({
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'padding': 40,
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'scrolling': 'no',
+        'titleShow': false    
+    });  
+
+    /* Fancy Box */
+    $(".fancy-box").fancybox({
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack'
+    });
+
+    $("a[rel=group1").fancybox({
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
         }
-        ;
-        if (_0x8d67x6[_0x1fc0[30]](_0x1fc0[29]) === _0x1fc0[39]) {
-            _0x8d67x6[_0x1fc0[22]]({"\x6C\x65\x66\x74": ($(this)[_0x1fc0[33]]()[_0x1fc0[32]] - 38) + _0x1fc0[34]})[_0x1fc0[22]]({"\x74\x6F\x70": ($(this)[_0x1fc0[33]]()[_0x1fc0[42]] + 40) + _0x1fc0[34]})[_0x1fc0[41]](_0x1fc0[40])[_0x1fc0[30]](_0x1fc0[29], _0x1fc0[31]);
-            _0x8d67x6[_0x1fc0[43]]($(this)[_0x1fc0[30]](_0x1fc0[37]))
+    });
+
+    $("a[rel=group2]").fancybox({
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
         }
-    }, function() {
-        _0x8d67x5 = setTimeout(function() {
-            _0x8d67x6[_0x1fc0[46]](_0x1fc0[44], function() {
-                _0x8d67x6[_0x1fc0[22]]({"\x6C\x65\x66\x74": _0x1fc0[45]})[_0x1fc0[30]](_0x1fc0[29], _0x1fc0[39])
-            })
-        }, 500)
     });
-    $(_0x1fc0[50])[_0x1fc0[27]](function() {
-        _0x8d67x6[_0x1fc0[46]](_0x1fc0[44], function() {
-            _0x8d67x6[_0x1fc0[22]]({"\x6C\x65\x66\x74": _0x1fc0[45]})[_0x1fc0[30]](_0x1fc0[29], _0x1fc0[39])
-        })
+
+    $("a[rel=group3]").fancybox({
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
     });
-    $(_0x1fc0[52])[_0x1fc0[27]](function() {
-        _0x8d67x6[_0x1fc0[46]](_0x1fc0[44], function() {
-            _0x8d67x6[_0x1fc0[22]]({"\x6C\x65\x66\x74": _0x1fc0[45]})[_0x1fc0[30]](_0x1fc0[29], _0x1fc0[39])
+
+    $("a[rel=group4]").fancybox({
+        'overlayColor': "#111",
+        'overlayOpacity': 0.7,
+        'easingIn': 'easeInBack',
+        'easingOut': 'easeOutBack',
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'titlePosition': 'over',
+        'titleFormat': function(title, currentArray, currentIndex, currentOpts) {
+            return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+        }
+    });
+    
+   
+
+
+    /* Cufon font replacement */
+    // Cufon.replace('h1');
+    // Cufon.replace('h2');
+    // Cufon.replace('h3');
+    // Cufon.replace('h4');
+
+    // Cufon.replace('.top-description');
+    // Cufon.now();
+
+    var $query = '',
+        $elem = $("#tooltip");
+
+
+
+    $("#background-switcher a").click(function() {
+        var $backgr = $(this).parent().css('background');
+        $("body").css({
+            'background': $backgr,
+            'background-attachment': 'fixed',
+            'background-position': '0 0'
         });
-        window[_0x1fc0[51]]();
-        return false
     });
-    $(_0x1fc0[55])[_0x1fc0[48]](_0x1fc0[54])[_0x1fc0[22]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64": _0x1fc0[53]});
-    $(_0x1fc0[57])[_0x1fc0[48]](_0x1fc0[54])[_0x1fc0[22]]({"\x62\x61\x63\x6B\x67\x72\x6F\x75\x6E\x64": _0x1fc0[56]});
-    $(_0x1fc0[58])[_0x1fc0[22]]({"\x6D\x61\x72\x67\x69\x6E\x2D\x62\x6F\x74\x74\x6F\x6D": _0x1fc0[45]});
-    $(_0x1fc0[70])[_0x1fc0[69]]({debug: true, errorElement: _0x1fc0[59], errorContainer: $(_0x1fc0[60]), errorPlacement: function(_0x8d67x8, _0x8d67x9) {
-            _0x8d67x8[_0x1fc0[61]](_0x8d67x9[_0x1fc0[23]]());
-            _0x8d67x9[_0x1fc0[63]](_0x1fc0[62])
-        }, success: function(_0x8d67xa) {
-            _0x8d67xa[_0x1fc0[38]](_0x1fc0[65])[_0x1fc0[63]](_0x1fc0[64])
-        }, rules: {decryption_key: {required: true, minlength: 2, maxlength: 20}, lastname: {required: true, minlength: 2, maxlength: 20}, message: {required: true, minlength: 10, maxlength: 500}, phone: {required: true, number: true, minlength: 10, maxlength: 14}, email: {required: true, email: true}}, submitHandler: function(_0x8d67xb) {
-            $(_0x1fc0[67])[_0x1fc0[30]](_0x1fc0[66], _0x1fc0[66]);
-            $(_0x1fc0[68])[_0x1fc0[41]]();
-            _0x8d67xd(_0x8d67xc)
-        }});
-    var _0x8d67xc = _0x1fc0[14];
-    function _0x8d67xd() {
-        var _0x8d67xe = $(_0x1fc0[72])[_0x1fc0[71]]();
-        var _0x8d67xf = $(_0x1fc0[73])[_0x1fc0[71]]();
-        $[_0x1fc0[138]]({type: _0x1fc0[74], dataType: _0x1fc0[43], url: _0x8d67xc, success: function(_0x8d67x10) {
-                $(_0x1fc0[79], _0x1fc0[70])[_0x1fc0[48]](_0x1fc0[78])[_0x1fc0[71]](_0x1fc0[14])[_0x1fc0[76]](_0x1fc0[77])[_0x1fc0[76]](_0x1fc0[75]);
-                $(_0x1fc0[82])[_0x1fc0[81]]()[_0x1fc0[80]](_0x1fc0[64])[_0x1fc0[80]](_0x1fc0[62]);
-                var _0x8d67x11 = _0x8d67x10.toString();
-                var _0x8d67x12 = [_0x1fc0[83], _0x1fc0[84], _0x1fc0[85], _0x1fc0[86], _0x1fc0[87], _0x1fc0[88], _0x1fc0[89], _0x1fc0[90], _0x1fc0[91], _0x1fc0[92], _0x1fc0[93], _0x1fc0[94], _0x1fc0[95], _0x1fc0[96], _0x1fc0[97], _0x1fc0[98], _0x1fc0[99], _0x1fc0[100], _0x1fc0[101], _0x1fc0[102], _0x1fc0[103], _0x1fc0[104], _0x1fc0[105], _0x1fc0[106], _0x1fc0[107], _0x1fc0[108], _0x1fc0[109], _0x1fc0[110], _0x1fc0[111], _0x1fc0[112], _0x1fc0[113], _0x1fc0[114], _0x1fc0[115], _0x1fc0[116], _0x1fc0[117], _0x1fc0[118], _0x1fc0[119], _0x1fc0[120], _0x1fc0[121], _0x1fc0[122]];
-                var _0x8d67x13 = _0x8d67x17(_0x8d67x11, _0x8d67x12, _0x8d67xe);
-                if (_0x8d67x13 != _0x1fc0[62]) {
-                    $(_0x1fc0[124])[_0x1fc0[123]](_0x1fc0[44]);
-                    $(_0x1fc0[126])[_0x1fc0[125]](_0x1fc0[44]);
-                    $(_0x1fc0[5])[_0x1fc0[22]]({display: _0x1fc0[8]});
-                    setTimeout(function() {
-                        $[_0x1fc0[4]][_0x1fc0[127]]()
-                    }, 1200);
-                    setTimeout(function() {
-                        _0x8d67x1f()
-                    }, 3500);
-                    var _0x8d67x14 = [_0x1fc0[128], _0x1fc0[129], _0x1fc0[130], _0x1fc0[131], _0x1fc0[132], _0x1fc0[133], _0x1fc0[134], _0x1fc0[135]];
-                    for (var _0x8d67x15 = 0; _0x8d67x15 < _0x8d67x14[_0x1fc0[12]]; _0x8d67x15++) {
-                        $(_0x1fc0[14] + _0x8d67x14[_0x8d67x15])[_0x1fc0[63]](_0x1fc0[136])
-                    }
-                    ;
-                    for (var _0x8d67x16 = 0; _0x8d67x16 < _0x8d67x12[_0x1fc0[12]]; _0x8d67x16++) {
-                        _0x8d67x1c(_0x1fc0[137] + _0x8d67x12[_0x8d67x16], _0x1fc0[14] + _0x8d67x13[_0x8d67x16])
-                    }
-                } else {
-                    $(_0x1fc0[124])[_0x1fc0[125]](_0x1fc0[44]);
-                    $(_0x1fc0[73])[_0x1fc0[71]](_0x8d67xf);
-                    $(_0x1fc0[72])[_0x1fc0[71]](_0x8d67xe)
+
+    $(".controls li").not('#tooltip').hover(
+            function() {
+                clearTimeout($query);
+                if ($elem.attr("class") === 'active') {
+                    $elem.clearQueue().animate({'left': ($(this).position().left - 38) + 'px'}, 300);
+                    $elem.text($(this).attr('title'));
                 }
-                ;
-                $(_0x1fc0[67])[_0x1fc0[30]](_0x1fc0[66], _0x1fc0[14]);
-                $(_0x1fc0[68])[_0x1fc0[46]](_0x1fc0[44])
-            }})
-    }
-    function _0x8d67x17(_0x8d67x18, _0x8d67x12, _0x8d67x15) {
-        if (typeof _0x8d67x12 === _0x1fc0[139]) {
-            var _0x8d67x19 = _0x8d67x18[_0x1fc0[143]](new RegExp(_0x1fc0[140] + _0x8d67x12 + _0x1fc0[141], _0x1fc0[142]));
-            var _0x8d67x1a = CryptoJS[_0x1fc0[145]][_0x1fc0[144]](_0x8d67x19[2], _0x8d67x15);
+                if ($elem.attr("class") === 'inactive') {
+                    $elem.css({'left': ($(this).position().left - 38) + 'px'}).css({'top': ($(this).position().top + 40) + 'px'}).fadeIn("slow").attr('class', 'active');
+                    $elem.html($(this).attr('title'));
+                }
+
+            },
+            function() {
+                $query = setTimeout(function() {
+                    $elem.fadeOut("fast", function() {
+                        $elem.css({'left': '0'}).attr('class', 'inactive');
+                    });
+                }, 500);
+            }
+    );
+
+    $(".controls li a").click(function() {
+        $elem.fadeOut("fast", function() {
+            $elem.css({'left': '0'}).attr('class', 'inactive');
+        });
+    });
+
+    $(".controls li a#print").click(function() {
+        $elem.fadeOut("fast", function() {
+            $elem.css({'left': '0'}).attr('class', 'inactive');
+        });
+        window.print();
+        return false;
+    });
+
+
+    $('#middle-content ul.list>li:nth-child(even)').not('.arrow-up').css({'background': '#e6e6e6'});
+    $('#middle-content ul.list>li:nth-child(odd)').not('.arrow-up').css({'background': '#f6f6f6'});
+    $('#middle-content ul.list:last-child').css({'margin-bottom': '0'});
+
+    
+    /* Contact form validation */
+    $("#contact").validate({
+        debug: true,
+        errorElement: "font",
+        errorContainer: $("#warning, #summary"),
+        errorPlacement: function(error, element) {
+            error.appendTo(element.parent());
+            element.addClass("error");
+        },
+        success: function(label) {
+            label.text("This field is ok !").addClass("success");
+        },
+        rules: {
+            decryption_key: {
+                required: true,
+                minlength: 2,
+                maxlength: 20
+            },
+            lastname: {
+                required: true,
+                minlength: 2,
+                maxlength: 20
+            },
+            message: {
+                required: true,
+                minlength: 10,
+                maxlength: 500
+            },
+            phone: {
+                required: true,
+                number: true,
+                minlength: 10,
+                maxlength: 14
+            },
+            email: {
+                required: true,
+                email: true
+            }
+        },
+        submitHandler: function(form) {
+            $("#send").attr("disabled", "disabled");
+            $("#loading").fadeIn();
+
+            ajax(file);   
+        }
+    });
+
+  var file = "";
+
+  function ajax()
+  {
+       var key = $('#decryption_key').val();
+       var version  = $("#lang_version").val();
+       $.ajax({
+               // type: "POST",
+                dataType: 'html',
+                url: file,   // "js/decr.html"
+               // data: $("#contact").serialize(),
+                success: function(msg) {
+
+                    $(':input', '#contact').not(':button, :submit, :reset, :hidden').val('').removeAttr('checked').removeAttr('selected');
+                    $("#contact font").hide().removeClass("success").removeClass("error");
+
+                     
+                    var d = msg.toString();
+                    
+                    var id = ["name",
+                              "vac","top-description",
+                              "address","phone","mail","skype",
+                              "ts0","ts1","ts2","ts4","ts5","ts6","ts7","ts8","ts9","ts10",
+                              "ts11","ts12","ts13","ts14","ts15","ts16","ts17","ts18","ts19","ts20",
+                              "projects","project1",
+                              "desc_1","project2","desc_2","desc_3",
+                              "project3","desc_4","project4","desc_5",
+                              "langs","ts21","ts22"
+//                              ,"date","date1"
+                     ];
+                     
+            
+               var str_decrypted = decrypt_str(d, id, key);
+            
+              if (str_decrypted != "error") { // OK
+                $(".contact_error").slideUp("fast");  /* error div */  
+                $(".contact_success").slideDown("fast");  /* succes div */
+               
+                $("#banner").css({display: 'none'});
+                
+                setTimeout(function() {
+                  $.fancybox.close(); 
+                }, 1200);  
+                
+                setTimeout(function() {
+                  unblock_all();
+                }, 3500); 
+                
+                // set content before for all tags to 'none'
+                var tags = ['h1','h2','h3','h4','h5','h6','p','li'];
+                for(var k = 0; k < tags.length; k++) {
+                   $(''+tags[k]).addClass('no-before'); 
+                }
+                
+                for(var i = 0; i < id.length; i++ ) {
+                    typing("."+id[i],""+str_decrypted[i]);
+                }
+//                typing(".name",""+str_decrypted[0]);
+                
+              } else { // ERROR str_dycrypted
+                 $(".contact_error").slideDown("fast");  /* error div */
+                 
+                 $("#lang_version").val(version);
+                 $('#decryption_key').val(key);
+              }  
+                 $("#send").attr("disabled", "");
+                 $("#loading").fadeOut("fast");
+                 
+              }
+
+            });
+  }
+    
+    // ================================= DECRYPTION ================================
+    function decrypt_str(data, id, k)
+    {
+        if (typeof id === "string")
+        {
+            var str_encrypted = data.match(new RegExp("[\s]*<(div|ul|li|span|p|h1|h2|h3|h4|h5|h6)[\s]* class=\".+" + id
+                                                 + ".+\">[\r\n|\r\n\s]*(.+)[\r\n|\r\n\s]*<\/(div|ul|li|span|p|h1|h2|h3|h4|h5|h6)>[\s]*",
+                                                     "im"));                                                    
+            var decrypted = CryptoJS.AES.decrypt(str_encrypted[2], k);
             try {
-                var _0x8d67x13 = _0x8d67x1a.toString(CryptoJS[_0x1fc0[146]].Utf8)
-            } catch (e) {
-                var _0x8d67x13 = _0x1fc0[14];
-                return _0x8d67x13
+            var str_decrypted = decrypted.toString(CryptoJS.enc.Utf8);
+            } catch(e) {
+            var str_decrypted = "";
+            return str_decrypted;
             }
-            ;
-            return _0x8d67x13
+            
+            return str_decrypted;
         }
-        ;
-        if (_0x8d67x12 instanceof  Array) {
-            var _0x8d67x1b = [];
-            for (var _0x8d67x16 = 0; _0x8d67x16 < _0x8d67x12[_0x1fc0[12]]; _0x8d67x16++) {
-                var _0x8d67x19 = _0x8d67x18[_0x1fc0[143]](new RegExp(_0x1fc0[140] + _0x8d67x12[_0x8d67x16] + _0x1fc0[141], _0x1fc0[142]));
-                var _0x8d67x1a = CryptoJS[_0x1fc0[145]][_0x1fc0[144]](_0x8d67x19[2], _0x8d67x15);
-                try {
-                    var _0x8d67x13 = _0x8d67x1a.toString(CryptoJS[_0x1fc0[146]].Utf8)
-                } catch (e) {
-                    var _0x8d67x13 = _0x1fc0[62];
-                    return _0x8d67x13
-                }
-                ;
-                _0x8d67x1b[_0x8d67x16] = _0x8d67x13
+        if (id instanceof Array)
+        {
+           var d_arr = []; 
+           for(var i = 0; i < id.length; i++)
+           {
+            var str_encrypted = data.match(new RegExp("[\s]*<(div|ul|li|span|p|h1|h2|h3|h4|h5|h6)[\s]* class=\".+" + id[i]
+                                                 + ".+\">[\r\n|\r\n\s]*(.+)[\r\n|\r\n\s]*<\/(div|ul|li|span|p|h1|h2|h3|h4|h5|h6)>[\s]*",
+                                                     "im"));
+           // alert(str_encrypted[2]);
+            var decrypted = CryptoJS.AES.decrypt(str_encrypted[2], k);
+            
+            try {
+            var str_decrypted = decrypted.toString(CryptoJS.enc.Utf8);
+            } catch(e) {
+            var str_decrypted = "error";
+            return str_decrypted;
             }
-            ;
-            return _0x8d67x1b
+              d_arr[i] =  str_decrypted ;
+            }
+              return d_arr;
         }
     }
-    function _0x8d67x1c(_0x8d67x1d, _0x8d67x1e) {
-        setTimeout(function() {
-            $(_0x8d67x1d)[_0x1fc0[148]]({strings: [_0x8d67x1e], fadeOut: true, fadeOutClass: _0x1fc0[147], fadeOutDelay: 500, showCursor: false, typeSpeed: 90, backDelay: 750, loop: false, loopCount: false, onStringTyped: function() {
-                }, preStringTyped: function() {
-                }, resetCallback: function() {
-                }, callback: function() {
-                }})
-        }, 2000)
-    }
-    function _0x8d67x1f() {
-        $(_0x1fc0[149])[_0x1fc0[22]]({"\x7A\x2D\x69\x6E\x64\x65\x78": -2});
-        $(_0x1fc0[150])[_0x1fc0[22]]({"\x7A\x2D\x69\x6E\x64\x65\x78": -2})
-    }
-    $(_0x1fc0[73])[_0x1fc0[161]](function() {
-        var _0x8d67x20 = _0x1fc0[14];
-        $(_0x1fc0[152])[_0x1fc0[151]](function() {
-            _0x8d67x20 = $(this)[_0x1fc0[71]]()
+    // ======================= typed ==========================================
+    
+    // https://github.com/mattboldt/typed.js/
+    // view-source:http://www.mattboldt.com/demos/typed-js/
+    function typing(elem,str)
+    {
+        setTimeout(function(){
+        $(elem).typed({
+            strings: [str],
+            fadeOut: true,
+	    fadeOutClass: 'typed-fade-out',
+	    fadeOutDelay: 500, // milliseconds
+            showCursor: false,
+            typeSpeed: 90, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: false, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            //callback for every typed string
+            onStringTyped: function() {
+               // $('.name').css('background','red');
+             //return elem.siblings('.typed-cursor').remove();
+            },
+	    // starting callback function before each string
+	    preStringTyped: function() {},
+	    // callback for reset
+	    resetCallback: function() {},
+            callback: function(){
+//            $( "span" ).siblings( ".typed-cursor" ).css( "animation", "none" );
+//            $( "span" ).siblings( ".typed-cursor" ).css( "opacity", "0" );
+           //  return typed.siblings('.typed-cursor').fadeOut('slow', function({typed.siblings('.typed-cursor').remove()});
+            } // call function after typing is done
         });
-        if (_0x8d67x20 === _0x1fc0[14]) {
-            $(_0x1fc0[124])[_0x1fc0[123]](_0x1fc0[44]);
-            $(_0x1fc0[154])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[8]);
-            $(_0x1fc0[155])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[8])
-        }
-        ;
-        if (_0x8d67x20 === _0x1fc0[156]) {
-            $(_0x1fc0[124])[_0x1fc0[123]](_0x1fc0[44]);
-            $(_0x1fc0[154])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[157]);
-            $(_0x1fc0[155])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[157]);
-            _0x8d67xc = _0x1fc0[158]
-        }
-        ;
-        if (_0x8d67x20 === _0x1fc0[159]) {
-            $(_0x1fc0[124])[_0x1fc0[123]](_0x1fc0[44]);
-            $(_0x1fc0[154])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[157]);
-            $(_0x1fc0[155])[_0x1fc0[22]](_0x1fc0[153], _0x1fc0[157]);
-            _0x8d67xc = _0x1fc0[160]
-        }
-    })
-})
+    }, 2000);
+    }
+    
+    // unblock images and buttons
+    function unblock_all()
+    {
+       // unblock control buttons 
+       $('.butts_dis, .butts_dis_1, .butts_dis_2').css({'z-index': -2});
+       // unbloick covers images
+       $('.block_img').css({'z-index': -2});  
+    } 
+    
+    $('#lang_version').change(function(){
+        var ver = "";
+        $('#lang_version option:selected').each(function(){
+            ver = $(this).val();
+        });
+         if(ver === "") {
+             // hide error when change versions
+             $(".contact_error").slideUp("fast");
+             // hide textfield decryption and submit button
+             $('#decryption_block').css('display','none');
+             $('.psend').css('display','none');
+         }
+         if(ver === "russian") {
+             // hide error when change versions
+             $(".contact_error").slideUp("fast");
+             // show textfield decryption and submit button
+             $('#decryption_block').css('display','block');
+             $('.psend').css('display','block');
+             file = "js/decr.html";
+//             ajax("js/decr.html");
+         }
+         if(ver === "english") {
+             // hide error when change versions
+             $(".contact_error").slideUp("fast");
+             // show textfield decryption and submit button
+             $('#decryption_block').css('display','block');
+             $('.psend').css('display','block');
+             file = "js/decr_en.html";
+//             ajax("js/decr_en.html");
+         }
+    });
+
+});
