@@ -259,6 +259,8 @@ $(document).ready(function() {
             url: content, // "js/decr.html"
             // data: $("#contact").serialize(),
             success: function(msg) {
+             
+                alert(msg);
 
                 $("#main").empty();
 
