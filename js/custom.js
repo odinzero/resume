@@ -139,6 +139,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             dataType: 'html',
+            contentType: 'application/html; charset=utf-8',
             url: file, // "js/decr.html"
             // data: $("#contact").serialize(),
             success: function(msg) {
@@ -256,6 +257,7 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             dataType: 'html',
+            contentType: 'application/html; charset=utf-8',
             url: content, // "js/decr.html"
             // data: $("#contact").serialize(),
             success: function(msg) {
