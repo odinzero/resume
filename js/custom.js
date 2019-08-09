@@ -137,7 +137,7 @@ $(document).ready(function() {
         var key = $('#decryption_key').val();
         var version = $("#lang_version").val();
         $.ajax({
-            type: "GET",
+            type: "POST",
             dataType: 'html',
             contentType: 'application/html; charset=utf-8',
             url: file, // "js/decr.html"
@@ -255,14 +255,12 @@ $(document).ready(function() {
     function downloadContentAjax(content) {
 
         $.ajax({
-            type: "GET",
+            type: "POST",
             dataType: 'html',
             contentType: 'application/html; charset=utf-8',
             url: content, // "js/decr.html"
             // data: $("#contact").serialize(),
             success: function(msg) {
-             
-                alert(msg);
 
                 $("#main").empty();
 
